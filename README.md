@@ -13,7 +13,7 @@ An app that allows a user to search for new books to read and create a list of f
 
 <a name='deploy'></a>
 ## Deployed App
-The deployed app can be found at
+The deployed app can be found at https://polar-anchorage-39217.herokuapp.com/
 
 <a name='license'></a>
 ## License

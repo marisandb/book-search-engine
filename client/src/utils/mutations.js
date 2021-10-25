@@ -21,18 +21,21 @@ export const ADD_USER = gql`
             username
         }
     }
-}`;
+}
+`;
 
 export const SAVE_BOOK = gql`
-    mutation saveBook($id: ID!) {
-        saveBook(bookId: $id) {
+    mutation saveBook($bookData: BookInput!) {
+        saveBook(bookData: $bookData) {
             _id
-            authors
-            description
-            title
-            image
-            link
-        })
+            savedBooks{
+                authors
+                description
+                title
+                image
+                link
+            }
+        }
     }
 `;
 
@@ -45,6 +48,6 @@ export const REMOVE_BOOK = gql`
             title
             image
             link
-        })
+        }
     }
 `;
